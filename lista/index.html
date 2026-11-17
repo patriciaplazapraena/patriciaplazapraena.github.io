@@ -204,9 +204,10 @@ a.big span span.pdfpill:last-child{font-size:13px!important}
 .rthanks{text-align:center;margin:14px 0 10px;font-weight:700}
 .barcode{height:44px;margin:0 6px;background:repeating-linear-gradient(90deg,#1d1d1d 0 2px,transparent 2px 4px,#1d1d1d 4px 5px,transparent 5px 8px,#1d1d1d 8px 11px,transparent 11px 12px,#1d1d1d 12px 13px,transparent 13px 17px)}
 .rmail{text-align:center;margin:6px 0 0;font-size:11px}
-.marker{position:absolute;left:50%;top:22%;transform:translateX(-50%) rotate(-6deg);display:flex;flex-direction:column;align-items:center;pointer-events:none;font-family:"Degular","Archivo",system-ui,sans-serif;font-weight:900;text-transform:uppercase;color:#E3120B;font-size:clamp(64px,9.6vw,156px);line-height:.84;letter-spacing:-.02em;z-index:2;white-space:nowrap;mix-blend-mode:multiply}
-.marker span{display:block;clip-path:inset(0 100% 0 0);animation:write 1s cubic-bezier(.6,.05,.3,1) forwards}
-.marker .m1{animation-delay:1.9s;margin-right:.5em}.marker .m2{animation-delay:2.3s;margin-left:.5em}
+.marker{position:absolute;left:50%;top:24%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;pointer-events:none;color:#E3120B;font-size:clamp(64px,8.4vw,140px);z-index:4;white-space:nowrap;text-shadow:0 6px 24px rgba(0,0,0,.25)}
+.marker span{display:block;overflow:hidden;padding-bottom:.04em}.marker span>em{display:block;font-style:normal;transform:translateY(110%);animation:mrise 1s cubic-bezier(.16,.84,.24,1) forwards}
+.marker .m1 em{animation-delay:1.8s}.marker .m2 em{animation-delay:2s}
+@keyframes mrise{to{transform:none}}
 @keyframes write{to{clip-path:inset(-10% -5% -10% 0)}}
 .stk{position:absolute;z-index:3}
 .sticker.stk{animation:slap .55s cubic-bezier(.34,1.56,.64,1) both}
@@ -216,9 +217,9 @@ a.big span span.pdfpill:last-child{font-size:13px!important}
 @media (max-width:900px){
 .tk-hero{padding:90px 12px 40px;min-height:auto}
 .tk-stage{height:auto;min-height:0;padding:30px 0 60px}
-.marker{font-size:clamp(44px,15vw,92px);top:22%}
+.marker{font-size:clamp(48px,17vw,100px);top:24%}
 }
-@media (prefers-reduced-motion:reduce){.rl,.marker span{opacity:1!important;clip-path:none!important}}
+@media (prefers-reduced-motion:reduce){.rl{opacity:1!important}.marker span>em{transform:none!important}}
 
 /* pegatinas realistas */
 .stk .real{position:relative;background:#fff;border-radius:16px;padding:12px 14px;box-shadow:0 0 0 5px #fff,0 2px 0 5px rgba(0,0,0,.06),0 22px 34px rgba(0,0,0,.42);font-family:"Archivo",system-ui,sans-serif;color:#141414;overflow:hidden}
@@ -383,7 +384,7 @@ a:hover>.roll::after{transform:translateY(0)}
 <p class="rmail">patriciaplazapraena@gmail.com</p>
 </article>
 </div>
-<div class="marker" aria-hidden="true"><span class="m1">SOCIAL</span><span class="m2">CREATIVE</span></div>
+<div class="marker display" aria-hidden="true"><span class="m1"><em>SOCIAL</em></span><span class="m2"><em>CREATIVE</em></span></div>
 </div>
 <div class="sticker stk sk-notif" style="animation-delay: 2.6s"><div class="real"><span class="hb"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 5.3 3 1.7-1.8 3.2-3 5.3-3 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg></span><div><b>Nuevo me gusta</b><small>a la gente le encanta tu contenido</small></div></div></div>
 <div class="sticker stk sk-chat" style="animation-delay: 2.8s"><div class="real"><p class="msg-in">¿Cuándo sale lo próximo?</p><p class="typing"><i></i><i></i><i></i></p><p class="msg-out">¡Mañana a las 19:00h!</p><small>conversación con usuarios</small></div></div>
