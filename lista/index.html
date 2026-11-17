@@ -204,41 +204,79 @@ a.big span span.pdfpill:last-child{font-size:13px!important}
 .rthanks{text-align:center;margin:14px 0 10px;font-weight:700}
 .barcode{height:44px;margin:0 6px;background:repeating-linear-gradient(90deg,#1d1d1d 0 2px,transparent 2px 4px,#1d1d1d 4px 5px,transparent 5px 8px,#1d1d1d 8px 11px,transparent 11px 12px,#1d1d1d 12px 13px,transparent 13px 17px)}
 .rmail{text-align:center;margin:6px 0 0;font-size:11px}
-.marker{position:absolute;left:50%;top:24%;transform:translateX(-50%) rotate(-7deg);display:flex;flex-direction:column;align-items:center;pointer-events:none;font-family:"Permanent Marker",cursive;color:#E3120B;font-size:clamp(64px,9.5vw,150px);line-height:.95;letter-spacing:.04em;text-shadow:0 2px 0 rgba(120,0,0,.15);z-index:2;white-space:nowrap}
+.marker{position:absolute;left:50%;top:22%;transform:translateX(-50%) rotate(-6deg);display:flex;flex-direction:column;align-items:center;pointer-events:none;font-family:"Degular","Archivo",system-ui,sans-serif;font-weight:900;text-transform:uppercase;color:#E3120B;font-size:clamp(64px,9.6vw,156px);line-height:.84;letter-spacing:-.02em;z-index:2;white-space:nowrap;mix-blend-mode:multiply}
 .marker span{display:block;clip-path:inset(0 100% 0 0);animation:write 1s cubic-bezier(.6,.05,.3,1) forwards}
-.marker .m1{animation-delay:1.9s}.marker .m2{animation-delay:2.35s;margin-left:.6em}
+.marker .m1{animation-delay:1.9s;margin-right:.5em}.marker .m2{animation-delay:2.3s;margin-left:.5em}
 @keyframes write{to{clip-path:inset(-10% -5% -10% 0)}}
 .stk{position:absolute;z-index:3}
 .sticker.stk{animation:slap .55s cubic-bezier(.34,1.56,.64,1) both}
 @keyframes slap{from{transform:scale(2.2) rotate(18deg);opacity:0}to{transform:none;opacity:1}}
 .stk>*{pointer-events:none}
-.st-pp{left:13%;top:6%;rotate:-9deg;display:grid;grid-template-columns:auto;background:#F5C518;border:3px solid #141414;padding:10px 14px 8px;box-shadow:8px 8px 0 #E3120B,0 18px 30px rgba(0,0,0,.35);font-family:"Degular","Archivo",sans-serif}
-.st-pp .pp-a{font-weight:900;font-size:clamp(54px,6vw,86px);line-height:.8;letter-spacing:-.04em;color:#141414}
-.st-pp .pp-b{font-weight:900;font-size:clamp(20px,2.2vw,30px);line-height:1;background:#E3120B;color:#fff;padding:2px 8px;margin-top:6px}
-.st-pp small{font:700 10px "Space Mono",monospace;margin-top:5px;color:#141414}
-.st-oval{right:12%;top:12%;rotate:8deg;background:#9C9C9C;border:3px solid #141414;border-radius:50%;padding:16px 34px;text-align:center;box-shadow:0 0 0 5px #E8E8E8,0 18px 30px rgba(0,0,0,.35);display:flex;flex-direction:column}
-.st-oval span{font:900 clamp(20px,2.3vw,32px) "Degular","Archivo",sans-serif;color:#141414;letter-spacing:-.02em}
-.st-oval small{font:700 10px "Space Mono",monospace;color:#141414}
-.st-dis{left:9%;bottom:12%;rotate:6deg;background:#141414;padding:10px 16px;box-shadow:0 18px 30px rgba(0,0,0,.35);display:flex;flex-direction:column;align-items:flex-start;border:3px solid #F5C518}
-.st-dis span{font:900 clamp(30px,3.4vw,50px) "Degular","Archivo",sans-serif;color:#F5C518;line-height:.9;letter-spacing:-.03em}
-.st-dis b{font:900 clamp(16px,1.6vw,22px) "Degular","Archivo",sans-serif;background:#F5C518;color:#141414;padding:2px 8px;margin-top:6px}
-.st-stamp{right:14%;bottom:10%;width:clamp(110px,10vw,150px);rotate:-14deg;background:rgba(245,242,234,.92);border-radius:50%;box-shadow:0 18px 30px rgba(0,0,0,.35)}
-.st-stamp svg{display:block;width:100%;height:auto}
-.st-tape{right:5%;top:30%;rotate:-74deg;width:250px;overflow:hidden;background:repeating-linear-gradient(45deg,#F5C518 0 14px,#141414 14px 28px);padding:6px 0;box-shadow:0 12px 24px rgba(0,0,0,.35)}
-.st-tape span{display:block;width:max-content;margin:0 auto;background:#F5C518;color:#141414;font:700 12px "Space Mono",monospace;padding:2px 10px;white-space:nowrap}
-.st-tag{left:27%;top:62%;rotate:-4deg;background:#E3120B;color:#fff;font:700 13px "Space Mono",monospace;padding:8px 14px;border-radius:6px;box-shadow:0 12px 24px rgba(0,0,0,.35)}
 .tk-down{position:absolute;left:50%;bottom:14px;margin-left:-22px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff;z-index:4}
 @media (max-width:900px){
 .tk-hero{padding:90px 12px 40px;min-height:auto}
 .tk-stage{height:auto;min-height:0;padding:30px 0 60px}
-.marker{font-size:clamp(46px,15vw,90px);top:20%}
-.st-pp{left:-2%;top:-2%;padding:6px 10px}.st-pp .pp-a{font-size:44px}.st-pp .pp-b{font-size:16px}
-.st-oval{right:-1%;top:2%;padding:10px 18px}.st-oval span{font-size:16px}
-.st-dis{left:-1%;bottom:4%}.st-dis span{font-size:24px}.st-dis b{font-size:13px}
-.st-stamp{right:0;bottom:2%;width:96px}
-.st-tape,.st-tag{display:none}
+.marker{font-size:clamp(44px,15vw,92px);top:22%}
 }
 @media (prefers-reduced-motion:reduce){.rl,.marker span{opacity:1!important;clip-path:none!important}}
+
+/* pegatinas realistas */
+.stk .real{position:relative;background:#fff;border-radius:16px;padding:12px 14px;box-shadow:0 0 0 5px #fff,0 2px 0 5px rgba(0,0,0,.06),0 22px 34px rgba(0,0,0,.42);font-family:"Archivo",system-ui,sans-serif;color:#141414;overflow:hidden}
+.stk .real::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(118deg,rgba(255,255,255,.75) 0%,rgba(255,255,255,0) 32%,rgba(255,255,255,0) 70%,rgba(255,255,255,.25) 100%);mix-blend-mode:soft-light;pointer-events:none}
+.stk small{display:block;font:700 10px "Space Mono",monospace;color:#6b6b6b;margin-top:6px;letter-spacing:.02em}
+.sk-notif{left:5%;top:9%;rotate:-6deg}
+.sk-notif .real{display:flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;border-radius:999px}
+.sk-notif .hb{width:44px;height:44px;border-radius:50%;background:#E3120B;color:#fff;display:flex;align-items:center;justify-content:center;animation:beat 1.6s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.22)}24%{transform:scale(1)}36%{transform:scale(1.14)}}
+.sk-notif b{font-weight:900;font-size:16px}.sk-notif small{margin-top:2px}
+.sk-chat{right:6%;top:9%;rotate:5deg;width:250px}
+.sk-chat .real{background:#ECECEC;display:flex;flex-direction:column;gap:6px}
+.sk-chat p{margin:0;padding:9px 13px;border-radius:16px;font-size:14px;font-weight:600;max-width:85%}
+.sk-chat .msg-in{background:#fff;align-self:flex-start;border-bottom-left-radius:4px}
+.sk-chat .msg-out{background:#E3120B;color:#fff;align-self:flex-end;border-bottom-right-radius:4px;animation:pop2 7s infinite}
+.sk-chat .typing{background:#fff;align-self:flex-end;display:flex;gap:4px;padding:11px 13px;animation:typ 7s infinite}
+.sk-chat .typing i{width:7px;height:7px;border-radius:50%;background:#9C9C9C;animation:dots 1s infinite}
+.sk-chat .typing i:nth-child(2){animation-delay:.15s}.sk-chat .typing i:nth-child(3){animation-delay:.3s}
+@keyframes dots{50%{transform:translateY(-4px);background:#141414}}
+@keyframes typ{0%,8%{display:flex;opacity:1}40%,100%{opacity:0;display:none}}
+@keyframes pop2{0%,40%{opacity:0;transform:scale(.6);display:none}48%,92%{opacity:1;transform:none;display:block}100%{opacity:0}}
+.sk-swatch{left:7%;top:40%;rotate:4deg;width:200px}
+.sk-swatch .sw{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;height:66px;margin-bottom:10px}
+.sk-swatch .sw span{border-radius:6px;transform-origin:bottom;animation:swy 4s ease-in-out infinite}
+.sk-swatch .sw span:nth-child(2){animation-delay:.2s}.sk-swatch .sw span:nth-child(3){animation-delay:.4s}.sk-swatch .sw span:nth-child(4){animation-delay:.6s}
+@keyframes swy{0%,80%,100%{transform:none}88%{transform:translateY(-6px)}}
+.sk-swatch b{font-weight:900;font-size:15px;letter-spacing:.02em}
+.sk-chart{right:9%;top:37%;rotate:-5deg;width:200px}
+.sk-chart .ch-top{display:flex;justify-content:space-between;align-items:center}
+.sk-chart .ch-top b{font-weight:900;font-size:15px}.sk-chart .ch-top span{background:#F5C518;border-radius:999px;padding:0 9px;font-weight:900}
+.sk-chart .bars{display:flex;align-items:flex-end;gap:6px;height:70px;margin-top:10px;border-bottom:2px solid #141414}
+.sk-chart .bars i{flex:1;height:var(--h);background:#9C9C9C;border-radius:4px 4px 0 0;transform-origin:bottom;animation:grow 3.5s cubic-bezier(.16,.84,.24,1) infinite}
+.sk-chart .bars i:last-child{background:#E3120B}
+.sk-chart .bars i:nth-child(2){animation-delay:.1s}.sk-chart .bars i:nth-child(3){animation-delay:.2s}.sk-chart .bars i:nth-child(4){animation-delay:.3s}.sk-chart .bars i:nth-child(5){animation-delay:.4s}.sk-chart .bars i:nth-child(6){animation-delay:.5s}
+@keyframes grow{0%{transform:scaleY(.1)}35%,85%{transform:scaleY(1)}100%{transform:scaleY(.1)}}
+.sk-cal{left:12%;bottom:7%;rotate:-7deg;width:150px}
+.sk-cal .real{padding:0;text-align:center}
+.sk-cal .cal-h{background:#E3120B;color:#fff;font-weight:900;font-size:16px;letter-spacing:.2em;padding:8px 0;border-bottom:3px dotted #fff}
+.sk-cal .cal-d{font-weight:900;font-size:62px;line-height:1;padding:6px 0 0;letter-spacing:-.03em}
+.sk-cal .cal-n{font-family:"Permanent Marker",cursive;color:#E3120B;font-size:15px;padding:2px 8px 12px}
+.sk-cal .ck{display:inline-block;animation:beat 2.2s ease-in-out infinite}
+.sk-reel{right:15%;bottom:2%;rotate:7deg;width:132px}
+.sk-reel .rv{position:relative;aspect-ratio:9/14;border-radius:10px;background:linear-gradient(160deg,#F5C518,#E3120B 70%,#7a0a0a);display:flex;align-items:center;justify-content:center}
+.sk-reel .play{width:0;height:0;border-left:22px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.3));animation:beat 2.4s infinite}
+.sk-reel .rtag{position:absolute;left:8px;top:8px;background:#141414;color:#fff;font:700 10px "Space Mono",monospace;padding:2px 6px;border-radius:4px}
+.sk-reel .prog{position:absolute;left:8px;right:8px;bottom:8px;height:4px;background:rgba(255,255,255,.4);border-radius:4px;overflow:hidden}
+.sk-reel .prog i{display:block;height:100%;width:100%;background:#fff;transform-origin:left;animation:prog 5s linear infinite}
+@keyframes prog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.sk-stamp{left:31%;bottom:4%;width:112px;rotate:-14deg;filter:drop-shadow(0 16px 24px rgba(0,0,0,.4))}
+.sk-stamp svg{display:block;width:100%;height:auto}
+@media (max-width:1100px){.sk-swatch{left:2%}.sk-chart{right:2%}.sk-stamp{display:none}}
+@media (max-width:900px){
+.sk-notif{left:-2%;top:-1%;scale:.78;transform-origin:left top}
+.sk-chat{right:-2%;top:3%;scale:.66;transform-origin:right top}
+.sk-cal{left:-1%;bottom:2%;scale:.7;transform-origin:left bottom}
+.sk-reel{right:0;bottom:2%;scale:.7;transform-origin:right bottom}
+.sk-swatch,.sk-chart,.sk-stamp{display:none}
+}
 /* NAV v2 */
 .nav2{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 clamp(14px,3vw,40px);pointer-events:none;transition:transform .55s cubic-bezier(.65,0,.35,1)}
 .nav2>*{pointer-events:auto}
@@ -347,12 +385,13 @@ a:hover>.roll::after{transform:translateY(0)}
 </div>
 <div class="marker" aria-hidden="true"><span class="m1">SOCIAL</span><span class="m2">CREATIVE</span></div>
 </div>
-<div class="sticker stk st-pp" style="animation-delay: 2.6s"><span class="pp-a">PP</span><span class="pp-b">PLAZA</span><small>social creative</small></div>
-<div class="sticker stk st-oval" style="animation-delay: 2.8s"><span>SOCIAL MEDIA</span><small>community manager</small></div>
-<div class="sticker stk st-dis" style="animation-delay: 3s"><span>DISEÑO</span><b>GRÁFICO</b></div>
-<div class="sticker stk st-stamp" style="animation-delay: 3.2s"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="stp" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"></path></defs><circle cx="60" cy="60" r="56" fill="none" stroke="#E3120B" stroke-width="5"></circle><circle cx="60" cy="60" r="33" fill="none" stroke="#E3120B" stroke-width="2"></circle><text fill="#E3120B" style="font: 700 11px 'Space Mono', monospace; letter-spacing: 2px"><textPath href="#stp">100% ANDALUZA · 100% ANDALUZA · </textPath></text><text x="60" y="68" text-anchor="middle" fill="#E3120B" style="font: 400 26px 'Permanent Marker', cursive">PP</text></svg></div>
-<div class="sticker stk st-tape" style="animation-delay: 3.4s"><span>CONTENIDO · ESTRATEGIA · COMUNIDAD · </span></div>
-<div class="sticker stk st-tag" style="animation-delay: 3.6s"><span>✓ PEDIDO LISTO</span></div>
+<div class="sticker stk sk-notif" style="animation-delay: 2.6s"><div class="real"><span class="hb"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 5.3 3 1.7-1.8 3.2-3 5.3-3 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg></span><div><b>Nuevo me gusta</b><small>a la gente le encanta tu contenido</small></div></div></div>
+<div class="sticker stk sk-chat" style="animation-delay: 2.8s"><div class="real"><p class="msg-in">¿Cuándo sale lo próximo?</p><p class="typing"><i></i><i></i><i></i></p><p class="msg-out">¡Mañana a las 19:00h!</p><small>conversación con usuarios</small></div></div>
+<div class="sticker stk sk-swatch" style="animation-delay: 3s"><div class="real"><div class="sw"><span style="background:#E3120B"></span><span style="background:#F5C518"></span><span style="background:#9C9C9C"></span><span style="background:#141414"></span></div><b>PALETA PP</b><small>#E3120B · #F5C518 · #9C9C9C</small></div></div>
+<div class="sticker stk sk-chart" style="animation-delay: 3.2s"><div class="real"><div class="ch-top"><b>Alcance</b><span>↑</span></div><div class="bars"><i style="--h:35%"></i><i style="--h:52%"></i><i style="--h:44%"></i><i style="--h:70%"></i><i style="--h:62%"></i><i style="--h:92%"></i></div><small>estudio de métricas</small></div></div>
+<div class="sticker stk sk-cal" style="animation-delay: 3.4s"><div class="real"><div class="cal-h">NOV</div><div class="cal-d">17</div><div class="cal-n">publicar 19:00 <span class="ck">✓</span></div></div></div>
+<div class="sticker stk sk-reel" style="animation-delay: 3.6s"><div class="real"><div class="rv"><span class="play"></span><span class="rtag">REEL</span><span class="prog"><i></i></span></div><small>edición de vídeo</small></div></div>
+<div class="sticker stk sk-stamp" style="animation-delay: 3.8s"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="stp" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"></path></defs><circle cx="60" cy="60" r="56" fill="#F5F2EA" stroke="#E3120B" stroke-width="5"></circle><circle cx="60" cy="60" r="31" fill="none" stroke="#E3120B" stroke-width="2"></circle><text fill="#E3120B" style="font: 700 11px 'Space Mono', monospace; letter-spacing: 2px"><textPath href="#stp">100% ANDALUZA · 100% ANDALUZA · </textPath></text><text x="60" y="70" text-anchor="middle" fill="#E3120B" style="font: 900 28px 'Archivo', sans-serif">PP</text></svg></div>
 </div>
 <a href="#sobre-mi" class="bob tk-down" aria-label="Bajar a Sobre mí"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></a>
 </section>
