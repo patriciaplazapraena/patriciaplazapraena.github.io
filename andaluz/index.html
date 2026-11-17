@@ -45,8 +45,8 @@ a{color:#B30E09}a:hover{color:#141414}
 .proj .pname{transition:transform .6s cubic-bezier(.16,.84,.24,1)}
 .proj:hover .pname{transform:translateX(12px)}
 .proj.flip{flex-direction:row-reverse}
-.pill{transition:background .25s,color .25s}
-.pill:hover{background:#141414;color:#E7E5E2}
+.tool{display:inline-block;transition:background .25s,color .25s}
+.tool:hover{background:#E3120B!important;border-color:#E3120B!important;color:#fff!important}
 .pill-r{transition:background .25s,color .25s}.pill-r:hover{background:#fff;color:#E3120B}
 .stg-2{margin-left:16%}.stg-3{margin-left:32%}
 @media (max-width:820px){.stg-2,.stg-3{margin-left:0}}
@@ -164,7 +164,7 @@ body{background-color:#F2ECDF;background-image:url(../assets/aged.svg),repeating
 /* herramientas */
 #herramientas{background:#1A438C url(../assets/aged.svg)!important;background-size:600px 600px!important;position:relative;overflow:hidden}
 #herramientas [style*="color: #E3120B"]{color:#F8F3E8!important;filter:none!important}
-#herramientas .pill{border-color:rgba(248,243,232,.6)!important;background:transparent!important;box-shadow:none!important;outline:none}
+#herramientas .tool{border-color:rgba(248,243,232,.6)!important;background:transparent!important;box-shadow:none!important;outline:none}
 #herramientas>div{position:relative;z-index:2}
 #herramientas .orn{filter:brightness(0) invert(.93) sepia(.2);opacity:.35}
 #herramientas [style*="border-top: 2px solid #E3120B"]{border-top-color:rgba(248,243,232,.6)!important}
@@ -888,21 +888,21 @@ a:hover>.roll::after{transform:translateY(0)}
 <h3 style="margin: 16px 0 22px; font-size: 28px; font-weight: 800; text-transform: uppercase; letter-spacing: -.01em">Diseño y creación</h3>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Adobe Creative Cloud</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Adobe Creative Cloud</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Canva</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Canva</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">CapCut</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">CapCut</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Envato</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Envato</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Magnific</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Magnific</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Midjourney</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Midjourney</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">ChatGPT</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">ChatGPT</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Claude</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Claude</span>
 
 </div>
 <p style="margin: 22px 0 0; font-size: 16px; line-height: 1.6; color: rgba(231,229,226,.78)">Creación y edición de contenido · diseño gráfico · vídeo · IA aplicada a la creatividad · desarrollo de ideas y recursos visuales</p>
@@ -913,15 +913,15 @@ a:hover>.roll::after{transform:translateY(0)}
 <h3 style="margin: 16px 0 22px; font-size: 28px; font-weight: 800; text-transform: uppercase; letter-spacing: -.01em">Social media y gestión</h3>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Instagram</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Instagram</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">TikTok</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">TikTok</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">LinkedIn</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">LinkedIn</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Metricool</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Metricool</span>
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Meta Business Suite</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Meta Business Suite</span>
 
 </div>
 <p style="margin: 22px 0 0; font-size: 16px; line-height: 1.6; color: rgba(231,229,226,.78)">Planificación · programación · creación de contenido · tendencias · gestión de comunidad · campañas</p>
@@ -932,14 +932,14 @@ a:hover>.roll::after{transform:translateY(0)}
 <h3 style="margin: 16px 0 22px; font-size: 28px; font-weight: 800; text-transform: uppercase; letter-spacing: -.01em">Analítica y estrategia</h3>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
 
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Google Analytics 4</span>
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Google Ads</span>
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Meta Ads Manager</span>
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Metricool</span>
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Meta Business Suite</span>
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">TikTok Analytics</span>
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Instagram Insights</span>
-<span class="pill" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">LinkedIn Analytics</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Google Analytics 4</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Google Ads</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Meta Ads Manager</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Metricool</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Meta Business Suite</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">TikTok Analytics</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">Instagram Insights</span>
+<span class="tool" style="border: 1.5px solid rgba(231,229,226,.5); border-radius: 999px; padding: 8px 14px; font-size: 15px; font-weight: 600; background: transparent; color: #E7E5E2">LinkedIn Analytics</span>
 
 </div>
 <p style="margin: 22px 0 0; font-size: 16px; line-height: 1.6; color: rgba(231,229,226,.78)">Análisis de métricas y KPIs · informes de resultados · seguimiento de tendencias · estudio de audiencias y competencia · conceptualización y calendarización de contenidos · optimización de campañas</p>
