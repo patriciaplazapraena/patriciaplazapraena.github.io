@@ -211,15 +211,20 @@ a.big span span.pdfpill:last-child{font-size:13px!important}
 .cr-down{position:absolute;left:50%;bottom:14px;margin-left:-22px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#141414;z-index:6}
 .cr-hero~* .nav2{}
 @media (max-width:600px){
-.cr-hero{height:max(700px,92vh)}
-.holder{left:-150px;width:300px}
+.cr-hero{height:max(790px,100svh)}
+.holder{left:-140px;width:280px}
+.idcard{padding:16px}
+.id-no{font-size:8px;letter-spacing:.02em}
 .id-title{font-size:32px}
-.id-fields dd{font-size:20px}.cr-hint{font-size:10px}
+.id-fields dd{font-size:19px}.cr-hint{font-size:10px;bottom:56px!important}
 .cr-hint{bottom:58px}
 }
 @media (prefers-reduced-motion:reduce){.id-fields dd{clip-path:none!important}.cr-scribble path{stroke-dashoffset:0!important}}
 
 /* ===== BACKSTAGE ===== */
+html,body{overflow-x:hidden}
+.cr-hero{overflow:clip}
+.stage{overflow:clip}
 .cr-hero{background:#070707!important;background-image:none!important}
 .stage{position:absolute;inset:0;overflow:hidden;pointer-events:none}
 .st-metro{position:absolute;inset:0;width:100%;height:100%;display:block;background:#040507}
@@ -1282,7 +1287,7 @@ a:hover>.roll::after{transform:translateY(0)}
     var t=(now-t0)/1000, cyc=10, ph=t%cyc, run=Math.floor(t/cyc);
     x.globalCompositeOperation='source-over'; x.filter='none';
     x.fillStyle='#040507'; x.fillRect(0,0,W,H);
-    var top=H*.27, bot=H*.73, wy=H*.36, wh=H*.2;
+    var bandH=Math.min(H*.46,W*.62), top=H*.5-bandH/2, bot=H*.5+bandH/2, wy=top+bandH*.2, wh=bandH*.43;
     // platform glow
     var g=x.createLinearGradient(0,bot,0,H); g.addColorStop(0,'rgba(60,70,90,.18)'); g.addColorStop(1,'rgba(0,0,0,0)'); x.fillStyle=g; x.fillRect(0,bot,W,H-bot);
     var on=ph<7.2; 
