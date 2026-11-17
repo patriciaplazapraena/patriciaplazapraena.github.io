@@ -1064,7 +1064,6 @@ a:hover>.roll::after{transform:translateY(0)}
   window.addEventListener('scroll', function () {
     var y = window.scrollY;
     nav.classList.toggle('scrolled', y > 60);
-    if (!document.body.classList.contains('menu-open')) nav.classList.toggle('hide', y > lastY && y > 300);
     lastY = y;
   }, { passive: true });
   var burger = nav.querySelector('.burger');
