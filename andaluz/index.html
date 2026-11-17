@@ -187,6 +187,15 @@ a.big{border-top-color:#1E4FA3!important}
 #inicio .vframe{top:86px}
 @media (max-width:600px){.vframe{inset:10px}#inicio .vframe{top:78px}}
 a.big span span.pdfpill:last-child{font-size:13px!important}
+
+/* frases que se mueven solas */
+.mq{overflow:hidden;width:100vw;margin-left:calc(50% - 50vw)}
+.mq-t{display:flex;width:max-content;animation:mqL 26s linear infinite}
+.mq-t.r{animation-name:mqR;animation-duration:30s}
+.mq-t>div{flex:none;padding:.3em .35em 0 0}
+@keyframes mqL{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes mqR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@media (prefers-reduced-motion:reduce){.mq-t{animation:none}}
 /* NAV v2 */
 .nav2{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 clamp(14px,3vw,40px);pointer-events:none;transition:transform .55s cubic-bezier(.65,0,.35,1)}
 .nav2>*{pointer-events:auto}
@@ -378,8 +387,8 @@ a:hover>.roll::after{transform:translateY(0)}
 </div>
 </div>
 <div aria-hidden="true" style="margin-top: clamp(80px, 10vw, 140px); display: flex; flex-direction: column; gap: 4px">
-<div class="display slide-l" style="font-size: clamp(56px, 11vw, 180px); color: #141414; white-space: nowrap">Creatividad <span style="color: #E3120B">·</span> Estrategia</div>
-<div class="display slide-r" style="font-size: clamp(56px, 11vw, 180px); color: transparent; -webkit-text-stroke: 2px #E3120B; white-space: nowrap; text-align: right">Diseño <span style="color: #E3120B; -webkit-text-stroke: 0">·</span> Comunidad</div>
+<div class="mq"><div class="mq-t"><div class="display" style="font-size: clamp(56px, 11vw, 180px); color: #141414; white-space: nowrap">Creatividad <span style="color: #E3120B">·</span> Estrategia <span style="color: #E3120B; -webkit-text-stroke: 0">·</span></div><div class="display" style="font-size: clamp(56px, 11vw, 180px); color: #141414; white-space: nowrap">Creatividad <span style="color: #E3120B">·</span> Estrategia <span style="color: #E3120B; -webkit-text-stroke: 0">·</span></div><div class="display" style="font-size: clamp(56px, 11vw, 180px); color: #141414; white-space: nowrap">Creatividad <span style="color: #E3120B">·</span> Estrategia <span style="color: #E3120B; -webkit-text-stroke: 0">·</span></div><div class="display" style="font-size: clamp(56px, 11vw, 180px); color: #141414; white-space: nowrap">Creatividad <span style="color: #E3120B">·</span> Estrategia <span style="color: #E3120B; -webkit-text-stroke: 0">·</span></div></div></div>
+<div class="mq"><div class="mq-t r"><div class="display" style="font-size: clamp(56px, 11vw, 180px); color: transparent; -webkit-text-stroke: 2px #E3120B; white-space: nowrap">Diseño <span style="color: #E3120B; -webkit-text-stroke: 0">·</span> Comunidad <span style="color: #E3120B; -webkit-text-stroke: 0">·</span></div><div class="display" style="font-size: clamp(56px, 11vw, 180px); color: transparent; -webkit-text-stroke: 2px #E3120B; white-space: nowrap">Diseño <span style="color: #E3120B; -webkit-text-stroke: 0">·</span> Comunidad <span style="color: #E3120B; -webkit-text-stroke: 0">·</span></div><div class="display" style="font-size: clamp(56px, 11vw, 180px); color: transparent; -webkit-text-stroke: 2px #E3120B; white-space: nowrap">Diseño <span style="color: #E3120B; -webkit-text-stroke: 0">·</span> Comunidad <span style="color: #E3120B; -webkit-text-stroke: 0">·</span></div><div class="display" style="font-size: clamp(56px, 11vw, 180px); color: transparent; -webkit-text-stroke: 2px #E3120B; white-space: nowrap">Diseño <span style="color: #E3120B; -webkit-text-stroke: 0">·</span> Comunidad <span style="color: #E3120B; -webkit-text-stroke: 0">·</span></div></div></div>
 </div>
 </section>
 
