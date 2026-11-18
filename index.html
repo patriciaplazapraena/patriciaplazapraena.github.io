@@ -175,6 +175,25 @@ a.big span span.pdfpill:last-child{font-size:13px!important}
 /* herramientas en cuadrados blancos */
 #herramientas .tool{background:#F4F2EF!important;color:#141414!important;border:0!important;border-radius:999px!important;padding:11px 18px!important;font-weight:700!important;box-shadow:inset 0 -3px 0 rgba(0,0,0,.12),0 6px 16px rgba(0,0,0,.25)}
 #herramientas .tool:hover{background:#E3120B!important;color:#fff!important}
+
+/* transición entre secciones */
+.pt-curtain{position:fixed;inset:0;z-index:300;pointer-events:none;display:flex;align-items:center;justify-content:center;background:#E3120B;color:#fff;transform:translateY(100%);visibility:hidden}
+.pt-curtain.in{visibility:visible;animation:ptIn .5s cubic-bezier(.76,0,.24,1) forwards}
+.pt-curtain.out{visibility:visible;animation:ptOut .55s cubic-bezier(.76,0,.24,1) forwards}
+.pt-curtain::before{content:"";position:absolute;inset:0;background:#141414;transform:translateY(100%);animation:none}
+.pt-curtain.in::before{animation:ptIn2 .5s .06s cubic-bezier(.76,0,.24,1) both}
+.pt-curtain.out::before{transform:none;animation:ptOut .55s cubic-bezier(.76,0,.24,1) reverse both}
+.pt-label{position:relative;z-index:1;font-family:"Degular","Archivo",system-ui,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;font-size:clamp(48px,11vw,180px);line-height:.9;text-align:center;padding:0 20px;overflow:hidden}
+.pt-label span{display:block;transform:translateY(110%)}
+.pt-curtain.in .pt-label span{animation:ptTxt .5s .15s cubic-bezier(.16,.84,.24,1) forwards}
+.pt-curtain.out .pt-label span{transform:none;animation:ptTxtOut .4s cubic-bezier(.76,0,.24,1) forwards}
+.pt-curtain.in::before,.pt-curtain.out::before{display:none}
+@keyframes ptIn{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes ptOut{from{transform:translateY(0)}to{transform:translateY(-100%)}}
+@keyframes ptIn2{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes ptTxt{to{transform:none}}
+@keyframes ptTxtOut{to{transform:translateY(-110%)}}
+@media (prefers-reduced-motion:reduce){.pt-curtain{display:none}}
 /* NAV v2 */
 .nav2{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 clamp(14px,3vw,40px);pointer-events:none;transition:transform .55s cubic-bezier(.65,0,.35,1)}
 .nav2>*{pointer-events:auto}
@@ -222,6 +241,8 @@ a:hover>.roll::after{transform:translateY(0)}
 </style>
 </head>
 <body>
+<div class="pt-curtain" id="ptc" aria-hidden="true"><div class="pt-label"><span id="ptl"></span></div></div>
+
 <div class="site" style="width: 100%; overflow-x: clip">
 <div class="cursor" aria-hidden="true"><span class="cl"></span></div>
 
@@ -1124,6 +1145,34 @@ a:hover>.roll::after{transform:translateY(0)}
   burger.addEventListener('click', function () { toggle(!document.body.classList.contains('menu-open')); });
   mm.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { toggle(false); }); });
   window.addEventListener('resize', function () { moveTo(active); });
+})();
+</script>
+<script>
+(function(){
+  var c=document.getElementById('ptc'), l=document.getElementById('ptl'); if(!c) return;
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var busy=false;
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]');
+    if(!a||busy) return;
+    var id=a.getAttribute('href').slice(1); if(!id) return;
+    var t=document.getElementById(id); if(!t) return;
+    e.preventDefault(); e.stopPropagation(); busy=true;
+    var txt=(a.textContent||'').replace(/^\s*\d+\s*/,'').trim();
+    if(id==='inicio'||!txt||txt.length>24) txt=id==='inicio'?'Inicio':(id.replace(/-/g,' '));
+    l.textContent=txt;
+    if(document.body.classList.contains('menu-open')){document.body.classList.remove('menu-open');}
+    c.classList.remove('out'); void c.offsetWidth; c.classList.add('in');
+    setTimeout(function(){
+      var y=t.getBoundingClientRect().top+window.pageYOffset;
+      var html=document.documentElement, prev=html.style.scrollBehavior; html.style.scrollBehavior='auto';
+      window.scrollTo(0,y); html.style.scrollBehavior=prev;
+      if(history.replaceState) history.replaceState(null,'','#'+id);
+      setTimeout(function(){ c.classList.remove('in'); void c.offsetWidth; c.classList.add('out');
+        setTimeout(function(){ c.classList.remove('out'); busy=false; },600);
+      },260);
+    },620);
+  },true);
 })();
 </script>
 </body>
