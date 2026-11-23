@@ -296,6 +296,7 @@ a.big span span.pdfpill:last-child{font-size:13px!important}
 body.pt-hide>*:not(.cursor){opacity:0;transform:translateY(24px);filter:blur(6px);transition:none!important}
 body.pt-show>*:not(.cursor){transition:opacity .7s ease,transform .7s cubic-bezier(.16,.84,.24,1),filter .7s ease}
 @media (prefers-reduced-motion:reduce){body.pt-hide>*{opacity:1!important;transform:none!important;filter:none!important}}
+@media (max-width:1180px){.lname{display:none}.pill a{padding:0 13px}}
 /* NAV v2 */
 .nav2{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 clamp(14px,3vw,40px);pointer-events:none;transition:transform .55s cubic-bezier(.65,0,.35,1)}
 .nav2>*{pointer-events:auto}
@@ -336,7 +337,7 @@ a:hover>.roll::after{transform:translateY(0)}
 .menu-open .mono{background:#fff;color:#E3120B;box-shadow:none}
 .mlinks small{font-size:14px;letter-spacing:.2em;font-weight:700;opacity:.7}
 .menu-open .mlinks a{opacity:1;transform:none}
-.menu-open .mlinks a:nth-child(1){transition-delay:.25s}.menu-open .mlinks a:nth-child(2){transition-delay:.32s}.menu-open .mlinks a:nth-child(3){transition-delay:.39s}.menu-open .mlinks a:nth-child(4){transition-delay:.46s}
+.menu-open .mlinks a:nth-child(1){transition-delay:.25s}.menu-open .mlinks a:nth-child(2){transition-delay:.32s}.menu-open .mlinks a:nth-child(3){transition-delay:.39s}.menu-open .mlinks a:nth-child(4){transition-delay:.46s}.menu-open .mlinks a:nth-child(5){transition-delay:.53s}
 .mmail{color:#fff;font-weight:700;font-size:17px;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
 @media (max-width:900px){.pill,.cta{display:none}.burger{display:flex}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
@@ -354,6 +355,7 @@ a:hover>.roll::after{transform:translateY(0)}
 <span class="ind" aria-hidden="true"></span>
 <a href="#sobre-mi" data-sec="sobre-mi"><span class="roll" data-t="Sobre mí">Sobre mí</span></a>
 <a href="#experiencia" data-sec="experiencia"><span class="roll" data-t="Experiencia">Experiencia</span></a>
+<a href="../estrategia/" data-sec="estrategia"><span class="roll" data-t="Estrategia">Estrategia</span></a>
 <a href="#herramientas" data-sec="herramientas"><span class="roll" data-t="Herramientas">Herramientas</span></a>
 <a href="#contacto" data-sec="contacto"><span class="roll" data-t="Contacto">Contacto</span></a>
 </nav>
@@ -364,8 +366,9 @@ a:hover>.roll::after{transform:translateY(0)}
 <nav aria-label="Menú móvil" class="mlinks">
 <a href="#sobre-mi"><small>01</small>Sobre mí</a>
 <a href="#experiencia"><small>02</small>Experiencia</a>
-<a href="#herramientas"><small>03</small>Herramientas</a>
-<a href="#contacto"><small>04</small>Contacto</a>
+<a href="../estrategia/"><small>03</small>Estrategia</a>
+<a href="#herramientas"><small>04</small>Herramientas</a>
+<a href="#contacto"><small>05</small>Contacto</a>
 </nav>
 <a class="mmail" href="mailto:patriciaplazapraena@gmail.com">patriciaplazapraena@gmail.com</a>
 </div>
