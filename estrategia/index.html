@@ -346,6 +346,30 @@ body.pt-show>*:not(.cursor){transition:opacity .7s ease,transform .7s cubic-bezi
 .e2-case{border-radius:22px}
 }
 
+
+/* estrategia en blanco */
+html,body{background:#F6F5F1}
+.est2{background-color:#F6F5F1!important;background-image:linear-gradient(rgba(20,20,20,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(20,20,20,.07) 1px,transparent 1px)!important;background-size:76px 76px!important;color:#141414!important}
+.e2-title{color:#E3120B!important}
+.e2-tick{color:#141414}
+.e2-rot b{background:#E3120B!important;color:#fff!important}
+.e2-m-big{color:#141414}
+.e2-m-big span{background:#E3120B!important;color:#fff!important}
+.e2-m-txt{color:#3a3a3a;font-weight:500!important}
+.e2-flow::before{background:repeating-linear-gradient(90deg,#E3120B 0 12px,transparent 12px 22px)!important;background-size:22px 3px!important}
+.e2-ic{background:#E3120B!important;color:#fff!important;box-shadow:0 0 0 8px #F6F5F1!important;animation-name:pulseW!important}
+@keyframes pulseW{0%,14%,100%{transform:scale(1);background:#E3120B;color:#fff}5%{transform:scale(1.22) rotate(-8deg);background:#141414;color:#fff}}
+.e2-step b{color:#141414}
+.e2-ring{border-color:rgba(227,18,11,.6)!important}
+.e2-ball.on{background:#E3120B!important;color:#fff!important}
+.e2-ball.off{background:#141414!important;color:#fff!important}
+.e2-dot::before{background:#E3120B!important;box-shadow:0 0 0 4px rgba(227,18,11,.25)!important}
+.e2-big{color:#141414!important}
+.e2-case{background:#fff!important;color:#141414!important;border:2px solid #141414}
+.est2 .chip{border-color:#141414!important;color:#141414!important;background:transparent}
+.est2 .chip.dk{background:#141414!important;color:#fff!important}
+.est2 .chip:nth-child(3n){background:#E3120B!important;border-color:#E3120B!important;color:#fff!important}
+@media (max-width:820px){.e2-ic{box-shadow:0 0 0 5px #F6F5F1!important}}
 /* NAV v2 */
 .nav2{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 clamp(14px,3vw,40px);pointer-events:none;transition:transform .55s cubic-bezier(.65,0,.35,1)}
 .nav2>*{pointer-events:auto}
