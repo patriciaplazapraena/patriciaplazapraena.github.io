@@ -380,6 +380,11 @@ html,body{background:#F6F5F1}
 .est2 .chip.dk{background:#141414!important;color:#fff!important}
 .est2 .chip:nth-child(3n){background:#E3120B!important;border-color:#E3120B!important;color:#fff!important}
 @media (max-width:820px){.e2-ic{box-shadow:0 0 0 5px #F6F5F1!important}}
+/* cintas limpias */
+.e2-chips{rotate:0deg!important;margin-top:clamp(56px,7vw,96px)!important;border-block:1.5px solid #141414;padding:18px 0;gap:0!important}
+.e2-track{animation-duration:45s!important;gap:0!important}
+.est2 .chip,.est2 .chip.dk,.est2 .chip:nth-child(3n){background:transparent!important;border:0!important;border-radius:0!important;color:#141414!important;padding:0!important;font-size:clamp(15px,1.4vw,19px)!important;letter-spacing:.08em!important}
+.est2 .chip::after{content:"✦";color:#E3120B;margin:0 26px}
 /* NAV v2 */
 .nav2{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 clamp(14px,3vw,40px);pointer-events:none;transition:transform .55s cubic-bezier(.65,0,.35,1)}
 .nav2>*{pointer-events:auto}
@@ -495,7 +500,6 @@ a:hover>.roll::after{transform:translateY(0)}
 </div>
 <div class="e2-chips" aria-label="Acciones fuera de lo digital: Eventos, Pop-ups, Pantallas exteriores, Colaboraciones locales, Merch y packaging, Influencers en vivo, QR → redes, Contenido de la comunidad">
 <div class="e2-track" aria-hidden="true"><span class="chip">Eventos</span><span class="chip">Pop-ups</span><span class="chip">Pantallas exteriores</span><span class="chip">Colaboraciones locales</span><span class="chip">Merch y packaging</span><span class="chip">Influencers en vivo</span><span class="chip">QR → redes</span><span class="chip">Contenido de la comunidad</span><span class="chip">Eventos</span><span class="chip">Pop-ups</span><span class="chip">Pantallas exteriores</span><span class="chip">Colaboraciones locales</span><span class="chip">Merch y packaging</span><span class="chip">Influencers en vivo</span><span class="chip">QR → redes</span><span class="chip">Contenido de la comunidad</span></div>
-<div class="e2-track rev" aria-hidden="true"><span class="chip dk">Contenido de la comunidad</span><span class="chip dk">QR → redes</span><span class="chip dk">Influencers en vivo</span><span class="chip dk">Merch y packaging</span><span class="chip dk">Colaboraciones locales</span><span class="chip dk">Pantallas exteriores</span><span class="chip dk">Pop-ups</span><span class="chip dk">Eventos</span><span class="chip dk">Contenido de la comunidad</span><span class="chip dk">QR → redes</span><span class="chip dk">Influencers en vivo</span><span class="chip dk">Merch y packaging</span><span class="chip dk">Colaboraciones locales</span><span class="chip dk">Pantallas exteriores</span><span class="chip dk">Pop-ups</span><span class="chip dk">Eventos</span></div>
 </div>
 </section>
 
