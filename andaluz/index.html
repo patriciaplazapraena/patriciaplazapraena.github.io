@@ -1083,7 +1083,7 @@ a:hover>.roll::after{transform:translateY(0)}
         }
         if (car) {
           var d = e.clientX - car.sx;
-          if (Math.abs(d) > 5) car.moved = true;
+          if (Math.abs(d) > 5 && !car.moved) { car.moved = true; car.el.classList.add('grab'); }
           car.el.scrollLeft = car.sl - d;
         }
       },
@@ -1114,7 +1114,6 @@ a:hover>.roll::after{transform:translateY(0)}
         if (c && e.pointerType === 'mouse' && e.button === 0) {
           car = { el: c, sx: e.clientX, sl: c.scrollLeft, moved: false };
           c.style.scrollSnapType = 'none';
-          c.classList.add('grab');
         }
       },
       up: function () {
