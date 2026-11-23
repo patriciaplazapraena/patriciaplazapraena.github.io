@@ -386,6 +386,10 @@ html,body{background:#F6F5F1}
 .est2 .chip,.est2 .chip.dk,.est2 .chip:nth-child(3n){background:transparent!important;border:0!important;border-radius:0!important;color:#141414!important;padding:0!important;font-size:clamp(15px,1.4vw,19px)!important;letter-spacing:.08em!important}
 .est2 .chip::after{content:"✦";color:#E3120B;margin:0 26px}
 /* vídeo junto al caso real */
+a.fvid{display:block;text-decoration:none;cursor:pointer}
+.fv-cta{display:block;margin-top:8px;text-align:center;color:#fff;font-weight:800;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+a.fvid:hover .fv-cta{color:#E3120B}
+
 .case-row{display:flex;align-items:flex-start;gap:clamp(16px,2vw,28px);margin-top:28px}
 .case-row .e2-case2{margin-top:0;flex:1 1 auto;min-width:0}
 .fvid{flex:0 0 clamp(150px,13vw,200px);background:#141414;border-radius:22px;padding:8px;box-shadow:0 24px 50px rgba(0,0,0,.3),0 0 0 2px #E3120B;rotate:3deg;margin-top:-30px;animation:fvBob 5s ease-in-out infinite}
@@ -547,10 +551,11 @@ a:hover>.roll::after{transform:translateY(0)}
 <div class="cc"><span>Offline</span><span>Redes</span><span class="r">Influencers</span></div>
 <a class="clink" href="https://patriciaplazapraena.framer.website/work/carl%C2%B4s-junior" target="_blank" rel="noopener">Ver el proyecto completo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg></a>
 </div>
-<aside class="fvid" id="fvid" aria-label="Vídeo del caso real de Carl's Jr.">
+<a class="fvid" id="fvid" href="https://patriciaplazapraena.framer.website/work/carl%C2%B4s-junior" target="_blank" rel="noopener" aria-label="Ver el proyecto de Carl's Jr. (abre el vídeo y la campaña)">
 <div class="fv-top"><span class="fv-live"><i></i>Caso real · Carl's Jr.</span></div>
 <div class="fv-frame"><iframe src="https://www.youtube-nocookie.com/embed/6h_Gy2XFbiA?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=6h_Gy2XFbiA&amp;controls=0&amp;playsinline=1&amp;rel=0&amp;modestbranding=1&amp;iv_load_policy=3" title="Vídeo de la campaña de Carl's Jr." allow="autoplay; encrypted-media; picture-in-picture" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-</aside>
+<span class="fv-cta">Toca para ver el proyecto ↗</span>
+</a>
 </div>
 </div>
 </div>
